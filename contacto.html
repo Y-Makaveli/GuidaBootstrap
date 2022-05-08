@@ -36,10 +36,10 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid text-white bg-success">
+    <div class="jumbotron jumbotron-fluid text-white" style="background-color: rebeccapurple;">
         <div class="container">
             <h1 class="display-4">
-                Hotel el gran salon</h1>
+                Contacto</h1>
         </div>
     </div>
     <div class="container">
@@ -95,49 +95,6 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div>
-    <div class="container">
-        <div class="d-flex flex-warp flex-row-reverse">
-            <div class="d-flex flex-column justify-content-between mi-card-hotel">
-                <h4>Individual</h4>
-                <p>Desde 11 <sup>2</sup> en 1 estrella y desde 16,5 <sup>2</sup> en 5 estrellas</p>
-                <button class="btn btn-primary btn-sm">Reservar</button>
-            </div>
-            <div class="d-flex flex-column justify-content-between mi-card-hotel">
-                <h4>Doble</h4>
-                <p>Desde 11 <sup>2</sup> en 1 estrella y desde 16,5 <sup>2</sup> en 5 estrellas.</p>
-                <button class="btn btn-primary btn-sm">Reservar</button>
-            </div>
-            <div class="d-flex flex-column justify-content-between mi-card-hotel">
-                <h4>Doble</h4>
-                <p>Desde 11 <sup>2</sup> en 1 estrella y desde 16,5 <sup>2</sup> en 5 estrellas.</p>
-                <button class="btn btn-primary btn-sm">Reservar</button>
-            </div>
-            <div class="d-flex flex-column justify-content-between mi-card-hotel">
-                <h4>Doble</h4>
-                <p>Desde 11 <sup>2</sup> en 1 estrella y desde 16,5 <sup>2</sup> en 5 estrellas.</p>
-                <button class="btn btn-primary btn-sm">Reservar</button>
-            </div>
-            <div class="d-flex flex-column justify-content-between mi-card-hotel">
-                <h4>Doble</h4>
-                <p>Desde 11 <sup>2</sup> en 1 estrella y desde 16,5 <sup>2</sup> en 5 estrellas.</p>
-                <button class="btn btn-primary btn-sm">Reservar</button>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="d-flex flex-warp flex-row-reverse">
-            <div class="d-flex flex-column justify-content-between mi-card-hotel">
-                <h4>Individual</h4>
-                <p>Desde 11 <sup>2</sup> en 1 estrella y desde 16,5 <sup>2</sup> en 5 estrellas</p>
-                <button class="btn btn-primary btn-sm">Reservar</button>
-            </div>
-            <div class="d-flex flex-column justify-content-between mi-card-hotel">
-                <h4>Doble</h4>
-                <p>Desde 11 <sup>2</sup> en 1 estrella y desde 16,5 <sup>2</sup> en 5 estrellas.</p>
-                <button class="btn btn-primary btn-sm">Reservar</button>
-            </div>
-        </div>
-    </div>
     </div>
     <footer>
         <div class="row">
@@ -147,16 +104,45 @@
                 <a href="#">Youtube</a>
                 <a href="#">Instagram</a>
             </div>
-            <div class="col-md-4 mb-2">
+            <div class="col-md-4 mb-2 d-flex flex-column ">
+                <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="miModalLabel">Nueva reserva</h5>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-celular" class="col-form-label">Celular:</label>
+                                        <input type="text" class="form-control" id="recipient-celular">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-message" class="col-form-label">Mensaje:</label>
+                                        <input type="text" class="form-control" id="recipient-message">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <address>
                     <h3>Ubicación</h3>
-                    <p><span class="oi i-map mi-footer-address-icon"></span>Cll 13 Av1 #9-25</p>
-                    <p><span class="oi i-phone mi-footer-address-icon"></span>+57 3004913086</p>
-                    <p><span class="oi i-envelope-closed mi-footer-address-icon"></span>MakaveliHotels@fivestarts.com
+                    <p><span class="oi oi-map mi-footer-address-icon"></span>Cll 13 Av1 #9-25</p>
+                    <p><span class="oi oi-phone mi-footer-address-icon"></span>+57 3004913086</p>
+                    <p><span class="oi oi-envelope-closed mi-footer-address-icon"></span>Viajes.com
                     </p>
                 </address>
             </div>
-            <div class="col-md-4 d-flex flex-column align-items-end mb-2">
+            <div class="col-md-4 d-flex flex-column mb-2">
                 <a href="./nosotros.html">Nosotros</a>
                 <a href="./precios.html">Precios</a>
                 <a href="./terminos.html">Terminos y condiciones</a>
